@@ -1,3 +1,4 @@
+import NewsCard from "./components/NewsCard/NewsCard.jsx";
 function App() {
     return (
         <>
@@ -8,63 +9,9 @@ function App() {
                         <h2>The best news portal in the world</h2>
                     </hgroup>
                 </header>
-                <div className="grid grid-cols-4 gap-4">
-                    <article id="article">
-                        <h2>Article</h2>
-                        <p>
-                            Nullam dui arcu, malesuada et sodales eu, efficitur
-                            vitae dolor. Sed ultricies dolor non ante vulputate
-                            hendrerit.
-                        </p>
-                        <footer>
-                            <small>
-                                Duis nec elit placerat, suscipit nibh quis,
-                                finibus neque.
-                            </small>
-                        </footer>
-                    </article>
-                    <article id="article">
-                        <h2>Article</h2>
-                        <p>
-                            Nullam dui arcu, malesuada et sodales eu, efficitur
-                            vitae dolor. Sed ultricies dolor non ante vulputate
-                            hendrerit.
-                        </p>
-                        <footer>
-                            <small>
-                                Duis nec elit placerat, suscipit nibh quis,
-                                finibus neque.
-                            </small>
-                        </footer>
-                    </article>
-                    <article id="article">
-                        <h2>Article</h2>
-                        <p>
-                            Nullam dui arcu, malesuada et sodales eu, efficitur
-                            vitae dolor. Sed ultricies dolor non ante vulputate
-                            hendrerit.
-                        </p>
-                        <footer>
-                            <small>
-                                Duis nec elit placerat, suscipit nibh quis,
-                                finibus neque.
-                            </small>
-                        </footer>
-                    </article>
-                    <article id="article">
-                        <h2>Article</h2>
-                        <p>
-                            Nullam dui arcu, malesuada et sodales eu, efficitur
-                            vitae dolor. Sed ultricies dolor non ante vulputate
-                            hendrerit.
-                        </p>
-                        <footer>
-                            <small>
-                                Duis nec elit placerat, suscipit nibh quis,
-                                finibus neque.
-                            </small>
-                        </footer>
-                    </article>
+                <button>Refresh news</button>
+                <div className="grid grid-cols-3 gap-3">
+                    {[1,2,3,4,5,6].map(n => <NewsCard id={`${n}`}/>)}
                 </div>
             </main>
         </>
