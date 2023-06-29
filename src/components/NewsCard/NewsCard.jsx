@@ -30,11 +30,11 @@ function NewsCard() {
                     hendrerit.
                 </p>
                 <div className="flex flex-row justify-between mt-4">
-                    <button className="w-10 h-10 bg-slate-200 border-0">
-                        <img src="src/assets/images/save_for_later.png" alt="save for later" className="w-5 mx-auto my-auto" />
+                    <button className="w-8 h-8 bg-slate-200 border-0">
+                        <img src="src/assets/images/save_for_later.png" alt="save for later" className="w-4 mx-auto my-auto" />
                     </button>
-                    <button className="w-10 h-10 bg-slate-200 border-0">
-                        <img src="src/assets/images/heart.png" alt="mark as favorite" className="w-6 mx-auto my-auto" />
+                    <button className="w-8 h-8 bg-slate-200 border-0">
+                        <img src="src/assets/images/heart.png" alt="mark as favorite" className="w-5 mx-auto my-auto" />
                     </button>
                     <button className="basis-2/3 bg-green-800 border-0 font-bold text-sm text-white">
                         Read more

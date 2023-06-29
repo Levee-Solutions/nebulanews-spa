@@ -15,7 +15,7 @@ function App() {
                     </hgroup>
                 </header>
                 <button>Refresh news</button>
-                <div className="grid grid-cols-3 gap-10">
+                <div className="grid grid-cols-4 gap-10">
                     {[1, 2, 3, 4, 5, 6].map((n) => (
                         <NewsCard id={`${n}`} />
                     ))}
